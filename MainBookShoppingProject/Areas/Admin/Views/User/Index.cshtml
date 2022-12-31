@@ -1,0 +1,29 @@
+﻿
+<div class="row">
+    <div class="col-9">
+        <h3 class="text-primary">USER LIST</h3>
+    </div>
+    <div class="col-3">
+        <a asp-area="Identity" class="btn btn-outline-primary" asp-page="/Account/Register">
+            <i class="fas fa-plus-square"></i>&nbsp; CREATE NEW USER
+        </a>
+    </div>
+</div>
+<div class="row border p-2 m-2">
+    <table id="tbldata"class="table table-active table-active table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Company</th>
+                <th>Role</th>
+                <th></th>
+            </tr>
+        </thead>
+    </table>
+</div>
+@section scripts
+{
+<script src="~/js/Userjs.js"></script>
+}

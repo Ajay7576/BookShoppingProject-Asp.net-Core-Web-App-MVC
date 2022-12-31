@@ -1,0 +1,23 @@
+﻿<div class="row">
+    <div class="col-9">
+        <h3 class="text-primary">COMPANY LIST</h3>
+    </div>
+    <div class="col-3">
+        <a asp-action="Upsert" class="btn btn-outline-primary">
+            <i class="fas fa-plus-square"></i>&nbsp; CREATE NEW COMPANY
+        </a>
+    </div>
+</div>
+<div class="border p-2 m-2 ">
+    <table id="tbldata"class="table table-active table-bordered table-striped ">
+        <thead>
+            <tr>
+                <th>NAME</th><th>ADDRESS</th><th>CITY</th><th>STATE</th><th>PHONE NUMBER</th><th>IS AUTHORIZED</th><th>ACTIONS</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+@section scripts
+{
+<script src="~/js/Company.js"></script>
+}
